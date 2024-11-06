@@ -5,55 +5,81 @@
     font-family: Arial, sans-serif;
 }
 
-/* header section  */
-.logo {
-    padding-left: 10px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    background-color: smoky whitesmoke;
-    gap: 180px;
-    padding: 20px 10px;
+header {
+    padding: 20px 20px; 
 }
 
 .navbar {
     display: flex;
-    flex-direction: row;
-}
-
-.navbar ul {
-    display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    gap: 30px;
-    padding-top: 20px;
-    list-style-type: none;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 }
 
-.navbar ul a {
-    text-decoration: none;
-    color: #1e1e1e;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
 }
 
-.nav-buttons {
+.nav-links {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    gap: 20px; 
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-weight: bolder;
+}
+
+.nav-links a:hover {
+    color: #0073e6;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.sign-in,
+.get-started {
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #333;
     border-radius: 10px;
 }
 
-.sign-button {
-    padding: 0 15px;
+.sign-in:hover {
+    background-color: #f1f1f1;
+}
+
+.get-started {
+    background-color: #333;
+    color: #ffffff;
     border-radius: 10px;
 }
 
-.start-button {
-    background-color: black;
-    color: white;
-    padding: 0 15px;
-    border-radius: 10px;
+.get-started:hover {
+    background-color: #444;
 }
 
 /* hero section  */
@@ -199,7 +225,54 @@ nav {
     justify-content: space-around;
 }
 
+/* features section  */
+.feature {
+    padding-left: 45px;
+    padding: 40px;
+}
 
+.features-section {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.feature-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.feature-content {
+    padding: 1rem;
+}
+
+.feature-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
 
 
 
@@ -327,15 +400,78 @@ nav {
     border: none;
 }
 
+    /* testimonials section  */
+.testimonials-section {
+    text-align: center;
+    padding: 2rem;
+}
+    
+.testimonials-section h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+    
+.testimonials-section p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+    
+.testimonials-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    margin: 0 auto;
+}
+    
+.testimonial {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+    
+.rating {
+    color: #FFD700;
+    font-size: 1rem;
+    font-weight: bold;
+}
+    
+.rating span {
+    color: #333;
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+    
+.testimonial p {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 1rem 0;
+}
+    
+.testimonial h3 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0 0;
+}
+    
+.role {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+
     /* work section  */
 .work {
     background-color: black;
     border-radius: 15px;
-    padding: 50px;
+    padding: 50px 0px;
     color: white;
     width: 100%;
     text-align: center;
-    margin: 30px;
+    margin: 30px 0px;
+    padding-left: 10px;
 }
 
 .work button {
