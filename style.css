@@ -281,6 +281,7 @@ header {
     background-color: rgb(246, 247, 248);
     border-radius: 15px;
     padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .description-text {
@@ -297,11 +298,12 @@ header {
 .description-boxs {
     display: flex;
     flex-direction: row;
-    max-width: 95%;
-    height: 180px;
+    max-width: 99%;
+    height: 200px;
     justify-content: space-between;
     gap: 50px;
-    padding-left: 50px;
+    padding-left: 40px;
+    margin-bottom: 50px;
 }
 
 .description-box {
@@ -319,9 +321,10 @@ header {
 .subscription {
     background-color: black;
     color: white;
-    max-width: 95%;
+    max-width: 99%;
     border-radius: 15px;
     padding-left: 50px;
+    max-height: auto;
 }
 
 .subscription-text {
@@ -611,7 +614,7 @@ footer {
     .company-logo img {
         width: 80px; /* Smaller logos on medium screens */
     }
-
+    
     .description-boxs{
         display: flex;
         width: 100%;
@@ -671,7 +674,7 @@ footer {
     }
 
     .nav-links {
-        padding-right: 50px;
+        padding-right: 140px;
         padding-top: 15px;
     }
     
@@ -704,18 +707,40 @@ footer {
     }
 
     .description {
-        padding-bottom: 120px;
+        padding-bottom: 50px;
     }
 
     .description-box {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .description-box h4 {
+        font-size: 16px;
+    }
+
+    .description-boxs {
+        gap: 15px; 
+    }
+
+    .subscription-box1 p, li, .subscription-box2 p, li{
         font-size: 14px;
+    }
+
+    .subscription-box1 h2, .subscription-box2 h2{
+        font-size: 16px;
+    }
+
+    .plan-button {
+        font-size: 14px;
+    }
+    
+    #last-footer {
+        padding-right: 245px;
     }
     
 }
 
 /* Laptop screens */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    
+}
