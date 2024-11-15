@@ -228,7 +228,7 @@ header {
 /* features section  */
 .feature {
     padding-left: 45px;
-    padding: 40px;
+    padding: 0 20px;
 }
 
 .features-section {
@@ -236,7 +236,7 @@ header {
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1200px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     padding: 1rem;
 }
 
@@ -327,6 +327,7 @@ header {
     max-height: auto;
 }
 
+
 .subscription-text {
     line-height: 1.6;
     padding: 30px;
@@ -359,7 +360,7 @@ header {
 .subscription {
     Width: 100%;
     padding-bottom: 20px;
-    height: auto;
+    height: 700px;
 }
 
 .subscription-boxs {
@@ -665,7 +666,6 @@ footer {
     
 }
 
-
 /* Tablet screens */
 @media only screen and (min-width: 768px) and (max-width: 900px) {
     .auth-buttons {
@@ -679,30 +679,36 @@ footer {
     }
     
     .subscription {
-        max-height: auto;
+        height: 700px;
         max-width: 100%;
     }
 
-    .subscription-boxs {
-        max-height: 1500px;
-        overflow: auto;
-    }
+    /* .subscription-boxs {
+        max-height: 350px;
+        overflow: auto; 
+    }  */
     
-    .subscription-box1, .subscription-box2 {
-        overflow: auto;
+    .subscription-box1,.subscription-box2 {
+        height: 200px;
+        font-size: 15px;
     }
+
+
+    /* .subscription-box1, .subscription-box2 {
+        overflow: auto;
+    } */
 
     .subscription-boxs h2 {
         font-size: 20px;  /* Reduce heading size for mobile */
     }
 
     .subscription-boxs p, .subscription-boxs ol {
-        font-size: 12px;  /* Smaller text for mobile */
+        font-size: 14px;  /* Smaller text for mobile */
         line-height: 1.1rem;
     }
 
     .plan-button {
-        font-size: 10px;
+        font-size: 14px;
         padding: 8px 16px;
     }
 
@@ -742,5 +748,8 @@ footer {
 
 /* Laptop screens */
 @media only screen and (max-width: 1024px) {
-    
+    .subscription-box1, .subscription-box2 {
+        height: 400px;
+        font-size: 15px;
+    }
 }
