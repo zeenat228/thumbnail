@@ -33,6 +33,7 @@ header {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin-bottom: -2px;
 }
 
 .nav-links a {
@@ -301,14 +302,14 @@ header {
     max-width: 99%;
     height: 200px;
     justify-content: space-between;
-    gap: 50px;
-    padding-left: 40px;
-    margin-bottom: 50px;
+    gap: 40px;
+    padding-left: 20px;
+    margin-bottom: 30px;
 }
 
 .description-box {
     background-color: whitesmoke; 
-    Width: 33%;
+    Width: 30%;
     border: 1px solid rgb(200, 197, 197);
     line-height: 1.6;
     border-radius: 10px;
@@ -321,12 +322,12 @@ header {
 .subscription {
     background-color: black;
     color: white;
-    max-width: 99%;
+    Width: 99%;
     border-radius: 15px;
-    padding-left: 50px;
-    max-height: auto;
-}
+    padding-left: 30px;
+    height: auto;
 
+}
 
 .subscription-text {
     line-height: 1.6;
@@ -357,25 +358,20 @@ header {
     font-weight: bold;
 }
 
-.subscription {
-    Width: 100%;
-    padding-bottom: 20px;
-    height: 700px;
-}
-
 .subscription-boxs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    Width: 100%;
+    Width: 99%;
+    min-height: 450px;
 }
 
 .subscription-box1 {
     background-color: #666;
     color: #fff;
     width: 30%;
-    height: 470px;
+    min-height: 370px;
     line-height: 1.6;
     border-radius: 10px;
     padding: 20px 30px;
@@ -386,7 +382,7 @@ header {
     background-color: white;
     color: black;
     width: 30%;
-    height: 470px;
+    min-height: 370px;
     padding: 20px 30px;
     line-height: 1.6;
     border-radius: 10px;
@@ -496,7 +492,7 @@ footer {
     color: #ffffff;
     padding: 40px 0;
     border-radius: 15px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .footer-container {
@@ -506,6 +502,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    gap: 20px;
 }
 
 .footer-column {
@@ -613,7 +610,7 @@ footer {
     }
 
     .company-logo img {
-        width: 80px; /* Smaller logos on medium screens */
+        width: 80px;
     }
     
     .description-boxs{
@@ -667,7 +664,7 @@ footer {
 }
 
 /* Tablet screens */
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+/* @media only screen and (min-width: 768px) and (max-width: 900px) {
     .auth-buttons {
         padding-top: 10px;
         padding-left: 250px;
@@ -682,28 +679,18 @@ footer {
         height: 700px;
         max-width: 100%;
     }
-
-    /* .subscription-boxs {
-        max-height: 350px;
-        overflow: auto; 
-    }  */
     
     .subscription-box1,.subscription-box2 {
         height: 200px;
         font-size: 15px;
     }
 
-
-    /* .subscription-box1, .subscription-box2 {
-        overflow: auto;
-    } */
-
     .subscription-boxs h2 {
-        font-size: 20px;  /* Reduce heading size for mobile */
+        font-size: 20px;  
     }
 
     .subscription-boxs p, .subscription-boxs ol {
-        font-size: 14px;  /* Smaller text for mobile */
+        font-size: 14px;  
         line-height: 1.1rem;
     }
 
@@ -744,12 +731,126 @@ footer {
         padding-right: 245px;
     }
     
-}
+} */
 
 /* Laptop screens */
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
     .subscription-box1, .subscription-box2 {
         height: 400px;
         font-size: 15px;
+    }
+} */
+
+
+
+/* For larger mobile screens and small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .nav-links {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    
+    .auth-buttons {
+        padding-left: 120px;
+        padding-top: 20px;
+    }
+
+    .task-content {
+        width: 100%;
+    }
+
+    .task-timeline{
+        width: 100%;
+    }
+    
+    .description {
+        width: 100%;
+        min-height: 650px;
+        margin-bottom: 20px;
+    }
+
+    description-boxs {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .description-box {
+        min-height: 300px;
+        font-size: 12px;
+    }
+
+    .subscription {
+        height: auto; 
+    }
+
+    .subscription-boxs {
+        min-height: 400px;
+    }
+
+    .subscription-box1 , .subscription-box2 {
+        min-height: 380px;
+        font-size: 14px;
+        display: relative;
+    }
+
+    .plan-button {
+        padding: -10px -10px;
+        margin: -10px -10px;
+        display: relative;
+        font-size: 12px;
+    }
+}
+
+/* Common for larger tablets in portrait or landscape orientation */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .auth-buttons {
+        padding-left: 250px;
+    }
+
+    .nav-links {
+        padding-right: 90px;
+    }
+    
+    .description {
+        width: 100%;
+        height: 600px;
+    }
+
+    description-boxs {
+        width: 100%;
+        height: 280px;
+    }
+
+    .description-box {
+        height: 200px;
+        font-size: 12px;
+    }
+
+    .subscription {
+        height: auto;
+    }
+
+    .subscription-boxs {
+        min-height: 500px;
+    }
+
+    .subscription-box1 , .subscription-box2 {
+        min-height: 430px;
+    }
+
+}
+
+/* Covers most small desktop screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .subscription {
+        height: auto;
+    }
+
+    .subscription-boxs {
+        min-height: 450px;
+    }
+
+    .subscription-box1 , .subscription-box2 {
+        min-height: 400px;
     }
 }
