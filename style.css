@@ -663,16 +663,90 @@ footer {
     
 }
 
-/* Tablet screens */
-/* @media only screen and (min-width: 768px) and (max-width: 900px) {
-    .auth-buttons {
+
+
+/* For larger mobile screens and small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .nav-links {
+        font-size: 14px;
         padding-top: 10px;
+    }
+    
+    .auth-buttons {
+        padding-left: 120px;
+        padding-top: 20px;
+    }
+
+    .task-content {
+        width: 100%;
+    }
+
+    .task-timeline{
+        width: 100%;
+    }
+    
+    .description {
+        width: 100%;
+        min-height: 650px;
+        margin-bottom: 20px;
+    }
+
+    description-boxs {
+        width: 100%;
+        min-height: 400px;
+    }
+
+    .description-box {
+        min-height: 300px;
+        font-size: 12px;
+    }
+
+    .description-box h4 {
+        overflow-wrap: break-word;
+        hyphens: auto;
+        word-break: break-word;
+    }
+
+    .subscription {
+        height: auto; 
+    }
+
+    .subscription-boxs {
+        min-height: 400px;
+    }
+
+    .subscription-box1 , .subscription-box2 {
+        min-height: 380px;
+        font-size: 14px;
+        display: relative;
+    }
+    
+    .subscription-box1 h2 {
+        word-wrap: break-word;
+        hyphens: auto;
+        word-break: break-word;
+    }
+
+    .plan-button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    #last-footer {
+        padding-right: 235px;
+    }
+}
+
+/* Common for larger tablets in portrait or landscape orientation */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .auth-buttons {
+        padding-top: 20px;
         padding-left: 250px;
     }
 
     .nav-links {
-        padding-right: 140px;
-        padding-top: 15px;
+        padding-right: 150px;
+        padding-top: 10px;
     }
     
     .subscription {
@@ -681,7 +755,7 @@ footer {
     }
     
     .subscription-box1,.subscription-box2 {
-        height: 200px;
+        height: 450px; 
         font-size: 15px;
     }
 
@@ -723,122 +797,12 @@ footer {
         font-size: 16px;
     }
 
-    .plan-button {
-        font-size: 14px;
-    }
-    
     #last-footer {
-        padding-right: 245px;
+        padding-right: 265px;
     }
     
-} */
-
-/* Laptop screens */
-/* @media only screen and (max-width: 1024px) {
-    .subscription-box1, .subscription-box2 {
-        height: 400px;
-        font-size: 15px;
-    }
-} */
-
-
-
-/* For larger mobile screens and small tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .nav-links {
-        font-size: 14px;
-        padding-top: 10px;
-    }
-    
-    .auth-buttons {
-        padding-left: 120px;
-        padding-top: 20px;
-    }
-
-    .task-content {
-        width: 100%;
-    }
-
-    .task-timeline{
-        width: 100%;
-    }
-    
-    .description {
-        width: 100%;
-        min-height: 650px;
-        margin-bottom: 20px;
-    }
-
-    description-boxs {
-        width: 100%;
-        min-height: 400px;
-    }
-
-    .description-box {
-        min-height: 300px;
-        font-size: 12px;
-    }
-
-    .subscription {
-        height: auto; 
-    }
-
-    .subscription-boxs {
-        min-height: 400px;
-    }
-
-    .subscription-box1 , .subscription-box2 {
-        min-height: 380px;
-        font-size: 14px;
-        display: relative;
-    }
-
-    .plan-button {
-        padding: -10px -10px;
-        margin: -10px -10px;
-        display: relative;
-        font-size: 12px;
-    }
 }
 
-/* Common for larger tablets in portrait or landscape orientation */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .auth-buttons {
-        padding-left: 250px;
-    }
-
-    .nav-links {
-        padding-right: 90px;
-    }
-    
-    .description {
-        width: 100%;
-        height: 600px;
-    }
-
-    description-boxs {
-        width: 100%;
-        height: 280px;
-    }
-
-    .description-box {
-        height: 200px;
-        font-size: 12px;
-    }
-
-    .subscription {
-        height: auto;
-    }
-
-    .subscription-boxs {
-        min-height: 500px;
-    }
-
-    .subscription-box1 , .subscription-box2 {
-        min-height: 430px;
-    }
-
-}
 
 /* Covers most small desktop screens */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
